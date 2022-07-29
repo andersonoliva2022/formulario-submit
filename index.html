@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário sem back-end</title>
+</head>
+<body>
+    <!--o objetivo é preencher o form e receber e-mail resposta-->
+
+    <form id="formulario-contato"  action="https://formsubmit.co/andersonmonteiro.mkd@gmail.com" method="post">
+        
+        <h3 class="titulo-formulario">Entre em contato</h3>
+        
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/tanks.html"/>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_cc" value="monteirooliva@gmail.com"><!--em cópia-->
+        <input type="hidden" name="autoresponse" value="Recebemos o seu e-mail. Em breve entraremos em contato"><!--auto response-->
+
+        
+
+        <label>
+            Nome
+            <input type="text" name="nome" placeholder="digite seu nome" required />
+        </label>
+
+        <label>
+            Telefone
+            <input type="tel" name="telefone" placeholder="digite seu WhatsApp" required />
+        </label>
+
+        <label>
+            e-mail
+            <input type="email" name="email" placeholder="digite seu e-mail" required />
+        </label>
+
+        <button type="submit">Enviar</button>
+
+        <style>
+            form{
+    background-color:#2ffb10;
+    border-radius: 10px;
+    padding: 20px;
+    margin:100px 100px 100px 100px;
+    position: relative;
+    bottom: 70px;
+    height: 350px;
+    width: 300px;
+}
+
+input{
+    display: block;
+    background: #0aeaee;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    height: 40px;
+    width: 250px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+        </style>
+
+    </form>
+    
+</body>
+</html>
